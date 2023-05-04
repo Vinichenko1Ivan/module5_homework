@@ -11,8 +11,8 @@ let animalsMap = new Map ([
 
 ]);
 
-for (let elements of animalsMap) {
-  console.log(`${elements}`)
+for (let [key, value] of animalsMap) {
+  console.log(`ключ - ${key}, значение - ${value}`)
 }
 
 // Второй вариант:
@@ -26,6 +26,6 @@ someMap.set('bright-blue', 5);
 someMap.set('dark-blue', 6);
 someMap.set('violet', 7);
 
-for (let rainbow of someMap) {
-  console.log(`${rainbow}`)
+for (let [key, value] of someMap) {
+  console.log(`ключ - ${key}, значение - ${value}`)
 }
